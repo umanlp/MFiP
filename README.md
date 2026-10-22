@@ -60,22 +60,27 @@ bash make_train_test.sh
 
 python stats.py
 
-\textbf{Party} & \textbf{\# Tokens} &  \textbf{\# Frames} &  \textbf{MoralValue} &  \textbf{MoralActOrGoal} &  \textbf{ImmoralValue} &  \textbf{ImmoralActOrGoal} &  \textbf{PoliticalActOrGoal} & \textbf{NoFrame} \\
-\hline
-AfD & 71275 & 1193 & 68 & 272 & 8 & 541 & 157 & 147 \\
-CDU & 161447 & 2218 & 145 & 747 & 6 & 467 & 446 & 407 \\
-FDP & 47565 & 799 & 46 & 282 & 1 & 204 & 153 & 113 \\
-GRUENE & 40956 & 653 & 53 & 180 & 10 & 222 & 115 & 73 \\
-LINKE & 46308 & 868 & 36 & 220 & 2 & 396 & 107 & 107 \\
-SPD & 119938 & 1771 & 123 & 664 & 16 & 403 & 324 & 241 \\
-fraktionslos & 6562 & 70 & 4 & 21 & 2 & 29 & 12 & 2 \\
+|Party | # Tokens |  # Frames |  MoralValue |  MoralActOrGoal |  ImmoralValue |  ImmoralActOrGoal |  PoliticalActOrGoal | NoFrame |
+|-------|-------|-------|-------|-------|-------|-------|-------|-------|
+| AfD | 71275 | 1193 | 68 | 272 | 8 | 541 | 157 | 147 |
+| CDU | 161447 | 2218 | 145 | 747 | 6 | 467 | 446 | 407 |
+| FDP | 47565 | 799 | 46 | 282 | 1 | 204 | 153 | 113 |
+| GRUENE | 40956 | 653 | 53 | 180 | 10 | 222 | 115 | 73 |
+| LINKE | 46308 | 868 | 36 | 220 | 2 | 396 | 107 | 107 |
+| SPD | 119938 | 1771 | 123 | 664 | 16 | 403 | 324 | 241 |
+| fraktionslos | 6562 | 70 | 4 | 21 | 2 | 29 | 12 | 2 |
 
 
-Please also see our repo with the unified annotation layers for the parliamentary debates (NER, Situation Entities, Speech Events, MoPE annotations, and moral frames/roles). The corpus includes all annotation layers in a unified json format:
+Please also see our repo with the final release of the corpus, including unified annotation layers for the parliamentary debates (NER, Situation Entities, Speech Events, MoPE annotations, and moral frames/roles). The corpus includes all annotation layers in a unified json format:
 
-Github:  https://github.com/umanlp/gepadeu.git
+**Github:**  https://github.com/umanlp/gepadeu.git
 
-Paper:
+You can also search a pre-final version of the corpus online (w/o roles, to be added soon). The corpus is available via the ANNIS platform, an open source web browser-based search and visualisation architecture for complex multilevel linguistic corpora with diverse types of annotation. [See here for more info on ANNIS](https://corpus-tools.org/annis/). 
+
+**GePaDeU in ANNIS:** [Search the corpus online](https://linguistischeempirieannis.uni-muenster.de/annis/#_q=c3BlZWNoYWN0PSJEZW1hbmQiIF9pXyAiRnJlaWhlaXQi&ql=aql&_c=R2VQYURlVQ&cl=5&cr=5&s=0&l=10).
+
+
+**Paper:**
 
 ```
 @inproceedings{rehbein-etal-2026-gepadeu,
