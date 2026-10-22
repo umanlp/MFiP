@@ -1,5 +1,4 @@
-# MFiP
-Moral Frames in Politics
+# MFiP: Moral Frames in Politics
 
 This github provides supplementary materials for our EMNLP-2025 paper:
 
@@ -30,6 +29,14 @@ This github provides supplementary materials for our EMNLP-2025 paper:
 
 The repository includes the data and annotation guidelines for the MFiP corpus.
 
+
+## Data 
+
+In the data folder are two subfolders. The first one, ```mfip```, includes the annotation layers in a json format, with labels annotated by the individual coders and the majority label (see paper for details).
+
+The second folder, ```xval```, includes the preprocessed data used in the crossvalidation experiments described in the paper.
+
+
 ## Frame identification (FI)
 
 - only used to extract data for data augmentation
@@ -38,19 +45,20 @@ The repository includes the data and annotation guidelines for the MFiP corpus.
 
 ## Frame classification (FC)
 
-Frame type distribution:
 
-      45 ImmoralValue
-     475 MoralValue
-   1,090 NoFrame
-   1,314 PoliticalActOrGoal
-   2,262 ImmoralActOrGoal
-   2,386 MoralActOrGoal
+| Frame type distribution |
+|---------------------|
+|      45 ImmoralValue |
+|     475 MoralValue |
+|   1,090 NoFrame |
+|   1,314 PoliticalActOrGoal |
+|   2,262 ImmoralActOrGoal |
+|   2,386 MoralActOrGoal |
+| |
+|   7,572 Total |
 
-   7,572 Total
 
-
-#### Data: compute distribution of frames per party (outputs a latex table) 
+### Compute distribution of frames per party (outputs a latex table) 
 
 cd MFiP/experiments/data/xval
 
@@ -105,5 +113,6 @@ You can also search a pre-final version of the corpus online (w/o roles, to be a
     pages = "1794--1810",
 }
 ```
+
 
 
